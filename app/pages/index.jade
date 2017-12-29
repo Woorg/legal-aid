@@ -1,0 +1,10 @@
+extends /blocks/layout-default/layout-default
+
+include /blocks/hbk-player/hbk-player
+
+block head
+	- var pageTitle = 'Player widget';
+
+block content
+	.page__in
+		+hbk-player()
