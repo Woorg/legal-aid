@@ -6,3 +6,12 @@ mixin search-sec()
 					input.search-form__input(type="text", value="", placeholder="Начать поиск по сайту...")
 					button.search-form__submit(type="submit", value="Поиск")
 						+icon('search', true).search-form__search-icon
+						
+mixin search-sec-legal()
+	.search-sec
+		.search-sec__in
+			.search-sec__form.search-form.search-form_style-second
+				form.search-form__form(action="/", method="get")
+					input.search-form__input(type="text", value="", placeholder="Начать поиск по сайту...")
+					button.search-form__submit(type="submit", value="Поиск")
+						+icon('search', true).search-form__search-icon

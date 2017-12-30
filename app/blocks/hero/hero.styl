@@ -2,36 +2,70 @@
 	display block
 	background url('../images/content/hero-img.jpg') 0 0 no-repeat
 	background-size cover
+	overflow hidden
 	&__in
 		@extends .in
 		min-height 448px
 		clr()
+		+r(768px)
+			min-height 348px
 	&__left
-		padding-top 80px
+		padding-top 78px
 		width 710px
 		float left
 		color #000000
+		+r(1140px)
+			width ratio-percentage(710, 1170)
+		+r(1060px)
+			margin auto
+			padding-top 20px
+			padding-bottom 40px
+			float none
+		+r(768px)
+			width auto
 	&__right
 		width 400px
 		float right
+		+r(1140px)
+			width ratio-percentage(400, 1170)
+		+r(1060px)
+			width auto
+			float none
+		+r(768px)
+			display none
 	&__title
-		margin-bottom 27px
+		margin-bottom 15px
 		font-family $aTit
 		font-size 45px
 		line-height 59px
 		letter-spacing tracking(20,45)
 		text-transform uppercase
+		+r(1140px)
+			font-size 37px
+		+r(768px)
+			font-size 30px
+		+r(425px)
+			font-size 25px
+			line-height 49px
 	&__text
-		margin-bottom 30px
+		margin-bottom 18px
 		font-family $aTit
 		font-size 24px
 		line-height 52px
 		letter-spacing tracking(60,32)
 		text-transform uppercase
+		+r(1140px)
+			font-size 20px
+		+r(768px)
+			font-size 17px
+			line-height 43px
+		+r(425px)
+			font-size 14px
+			line-height 35px
 	&__button
-		padding-top 18px
+		padding-top 11px
 		padding-right 65px
-		padding-bottom 18px
+		padding-bottom 14px
 		padding-left 65px
 		width 298px
 		display block
@@ -46,22 +80,29 @@
 		box-shadow -3px 4px 6px 1px rgba(51, 51, 51, 0.32)
 		tr(all .3s ease)
 		&:hover
-			box-shadow none
+			background-color darken(#ccffcc, 10)
+		+r(425px)
+			width auto
 	&__logo
-		margin-top 80px
-		margin-left 36px
+		margin-top 83px
+		margin-left 47px
+		+r(1140px)
+			margin-left 0
+		+r(1060px)
+			margin auto
+			margin-top 20px
+		+r(768px)
+			display none
 
-.logo
-	display block
-	retinaSprite($logo_group)
-	color #333333
-	font-family Georgia
-	font-size 19px
-	font-weight 700
-	font-style italic
-	text-decoration none
-	letter-spacing tracking(20)
-	&__text
-		padding-top 160px
-		padding-left 115px
-		white-space nowrap
+.hero_style-second
+	background url('../images/content/hero-legal.jpg') 0 0 no-repeat
+	.hero__in
+		min-height 323px
+	.hero__left
+		padding-top 118px
+	.hero__title
+		color #ffffff
+		letter-spacing tracking(80z)
+	.hero__logo
+		margin-top 55px
+		margin-left 0

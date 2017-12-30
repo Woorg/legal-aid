@@ -6,7 +6,6 @@
 		padding-bottom 20px
 	// &__form
 
-
 .search-form
 	&__form
 		position relative
@@ -23,13 +22,24 @@
 		border 4px solid #ffffff
 		+placeholder()
 			color #666666
-
+		+r(768px)
+			padding-right 35px
+			padding-left 35px
+			font-size 25px
+		+r(425px)
+			padding-left 10px
+			padding-right 10px
+			font-size 20px
 	&__submit
 		position absolute
 		top 18px
 		right 70px
 		border none
 		background none
+		+r(768px)
+			right 35px
+		+r(425px)
+			right 10px
 		&:hover
 			.search-form__search-icon
 				fill lighten(#666666, 20)
@@ -38,3 +48,11 @@
 		width 30px
 		height 22px
 		fill #666666
+
+.search-form_style-second
+	background rgba(102,153,102,.24) url(../images/general/pattern.png) 0 0 repeat
+	.search-form__input
+		font-size 24px
+		line-height 36px
+		border 4px solid #99cc99
+		background-color #ffffff

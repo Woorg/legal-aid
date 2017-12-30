@@ -18,5 +18,23 @@ mixin consultation()
 							input.form__field.form__field-text(type="text", value="", placeholder="Ваш Телефон")
 							textarea.form__field.form__field-message(name="", placeholder="Описание")
 							input.form__field.form__field-submit(type="submit", value="получить консультацию")
+								
+mixin consultation-legal()
+	.consultation.consultation_style-second
+		.consultation__top
+			.consultation__in
+				h2.consultation__title Онлайн Консультация 
+				p.consultation__text Задайте свой вопрос адвокату или юристу прямо сейчас!
+		.consultation__w
+			.consultation__in
+				.consultation__form.form.form_style-second
+					.form__title 
+						span Оставьте свой вопрос и мы  ответим Вам в течении 5 минут! 
+					form.form__w(action="", method="post")
+						input.form__field.form__field-text(type="text", value="", placeholder="Ваше Имя")
+						input.form__field.form__field-text(type="text", value="", placeholder="Ваш Телефон")
+						textarea.form__field.form__field-message(name="", placeholder="Описание")
+						input.form__field.form__field-submit(type="submit", value="получить консультацию")
+	
 		
 			

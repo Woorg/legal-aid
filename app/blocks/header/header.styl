@@ -1,25 +1,42 @@
 .header
 	&__in
 		@extends .in
-		padding-top 20px
-		padding-bottom 20px
+		padding-top 14px
+		padding-bottom 14px
 		font-size 0
 		display flex
 		justify-content space-between
 		align-items center
-	// &__nav,
-	// &__button,
-	// &__social,
-	// &__phone
-	// 	display inline-block
-	// 	vertical-align middle
+		+r(1024px)
+			display block
+		+r(768px)
+			text-align center
+
+	&__nav,
+	&__button,
+	&__social,
+	&__phone
+		+r(1024px)
+			display inline-block
+			vertical-align middle
+		+r(768px)
+			display block
 
 	&__nav
-		margin-right 50px
+		margin-right 30px
+		// +r($d)
+		// 	margin-right 0
+		+r(1024px)
+			margin-top 5px
+		+r(768px)
+			margin-top 0
+			margin-right 0
+			margin-bottom 10px
+			text-align center
 	&__button
-		// margin-right 27px
+		margin-right 15px
 		padding 10px 28px 10px
-		width 146px
+		width 150px
 		background-color #ffffff
 		color #333333
 		font-family $nimb
@@ -33,84 +50,64 @@
 		tr( all .3s ease)
 		&:hover
 			box-shadow none
+		+r($d)
+			// margin-right 0
+			display none
+		+r(768px)
+			display none
 	&__button-text
-		font-weight 500
-		line-height 14px
+		font-weight bold
+		line-height 15px
 		letter-spacing tracking(20)
-
-	// &__social
-	// 	margin-right 61px
-
+	&__social
+		margin-right 16px
+		+r($d)
+			margin-right 0
+		+r(1024px)
+			display none
+		+r(768px)
+			display none
 	&__phone
-		// margin-top 15px
+		+r(1024px)
+			margin-top 4px
+			float right
+		+r(768px)
+			float none
+
+	&__control
+		padding 10px 16px
+		font-family $nimb
+		font-weight bold
+		font-size 15px
+		box-shadow 0 6px 4px 1px rgba(0, 0, 0, 0.09)
+		border 4px solid #ffffff
+		background #c7dac7
+		color #010100
+		&:hover
+			background darken(#c7dac7, 10)
+
+.header_style-second
+	// .header__in
+	// 	display block
+	// 	clr()
+	// .header__nav,
+	// .header__button,
+	// .header__social,
+	// .header__phone,
+	// .header__control
+	// 	display inline-block
+	// 	vertical-align middle
+	.header__body
+		.header__in
+			padding-top 40px
+			padding-bottom 0
+	.header__bottom
+		.header__in
+			padding-top 0
+			padding-bottom 14px
+			display block
+			clr()
+	.header__control
+		margin-top -10px
 		float right
-
-.nav
-	&__list
-		font-size 0
-	&__item
-		margin-right 20px
-		display inline-block
-		vertical-align top
-		&:last-child
-			margin-right 0
-	&__link
-		font-family $aTit
-		// font-family $aTitg
-		font-size 16px
-		line-height 24px
-		letter-spacing tracking(200)
-		text-transform uppercase
 		text-decoration none
-		color #333333
-		tr(all .3s ease)
-		&:hover
-			color darken(#333333, 50)
-.social
-	font-size 0
-	&__item
-		margin-right 10px
-		display inline-block
-		vertical-align middle
-		&:last-child
-			margin-right 0
-	&__item_vk
-		.social__icon
-			width 42px
-			height 22px
-	&__item_fb
-		.social__icon
-			width 20px
-			height 36px
-	&__item_inst
-		.social__icon
-			width 30px
-			height 30px
-	&__item_youtube
-		.social__icon
-			width 32px
-			height 38px
-	&__link
-		display block
-		&:hover
-			.social__icon
-				fill darken(#666666, 10)
-	&__icon
-		fill #666666
-		tr(all .3s ease)
-
-.phone
-	font-family $nimb
-	font-size 20px
-	line-height 24px
-	letter-spacing 0.4px
-	text-decoration none
-	color #333333
-	&__icon
-		display inline-block
-		vertical-align middle
-		width 16px
-		height 16px
-		fill #333333
-	&__val
-		padding-left 8px

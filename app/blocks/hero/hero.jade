@@ -1,10 +1,23 @@
 mixin hero()
 	.hero
 		.hero__in
+			.hero__right
+				.hero__logo.logo(href="#") 
+					.logo__text ЮридическаяПомощь. РФ
 			.hero__left
 				h1.hero__title Профессиональная Юридическая помощь
 				p.hero__text вы можете расчитывать на лучших юристов
 				a.hero__button(href="#") консультация
+
+include ../breadcrumbs/breadcrumbs
+
+mixin hero-legal()
+	.hero.hero_style-second
+		.hero__in
 			.hero__right
-				.hero__logo.logo(href="#") 
+				.hero__logo.logo.logo_second(href="#")
+					img.logo__image(src="assets/images/general/logo-third.png", alt="ЮридическаяПомощь. РФ") 
 					.logo__text ЮридическаяПомощь. РФ
+			.hero__left
+				h1.hero__title Для Юридических лиц
+				+breadcrumbs()

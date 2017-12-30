@@ -1,0 +1,27 @@
+.breadcrumbs
+	&__list
+		font-size 0
+	&__item
+		position relative
+		margin-right 33px
+		display inline-block
+		vertical-align top
+		&:last-child
+			margin-right 0
+		&:after
+			position absolute
+			top 50%
+			right -20px
+			margin-top -3px
+			retinaSprite($rarr_group)
+			content ''
+	&__link,
+	span
+		color #ffffff
+		font-family 'Helvetica Neue', Helvetica, sans-serif
+		font-size 20px
+		line-height 44px
+		text-decoration none
+		letter-spacing tracking(20, 20)
+		&:hover
+			text-decoration underline

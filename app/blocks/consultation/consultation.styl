@@ -1,6 +1,8 @@
 .consultation
 	padding-bottom 124px
 	background url(../images/general/pattern.png) 0 0 repeat
+	+r(1024px)
+		padding-bottom 62px
 	&__top
 		padding-top 45px
 		min-height 191px
@@ -24,18 +26,52 @@
 	&__w
 		padding-top 30px
 		background #fff
+		+r(1024px)
+			padding-bottom 30px
 	&__left
 		padding-left 45px
 		width 550px
+		width ratio-percentage(550, 1170)
 		float left
+		+r(1024px)
+			display none
+			width auto
+			float none
 	&__image
 		width 467px
-		height 638px
+		// min-height 638px
+		+r(1072px)
+			width auto
 	&__img
 		@extends .image
 	&__right
 		width 560px
+		width ratio-percentage(560, 1170)
 		float right
+		+r(1024px)
+			width auto
+			float none
+
 	&__form
 		margin-top 37px
 		margin-left 42px
+		+r(1072px)
+			margin-top 0
+		+r(1024px)
+			margin auto
+
+.consultation_style-second
+	padding-bottom 0
+	background none
+	.consultation__top
+		padding-bottom 38px
+		min-height auto  
+	.consultation__w
+		background url(../images/content/consult-legal.jpg) 100% 0 no-repeat
+	.consultation__left
+		padding-left 0
+	.consultation__text
+		max-width 100%
+	.consultation__form
+		margin-top 0
+		margin-left 0

@@ -8,29 +8,30 @@
 	background #fff
 .in
 	margin auto
-	padding-right 30px
-	padding-left 30px
+	padding-right 15px
+	padding-left 15px
 	max-width 1170px
 .page
 	&__in
 		@extends .in
-
 	&__bottom
 		clr()
-
 	&__map
 		float left
 		width 50%
+		+r(1024px)
+			float none
+			width 100%
 	&__contacts
 		float right
 		width 50%
-
-
+		+r(1024px)
+			float none
+			width 100%
 .image
 	display block
 	max-width 100%
 	height auto
-
 .title
 	color #333333
 	font-family $aTit
@@ -39,6 +40,9 @@
 	text-align center
 	text-transform uppercase
 	letter-spacing tracking(20)
+	+r(768px)
+		font-size 25px
+		line-height 43px
 	span
 		position relative
 		border-left 62px solid transparent
@@ -60,79 +64,3 @@
 			left calc(100% + 62px)
 		&:before
 			right calc(100% + 62px)
-
-
-.form
-	padding-top 30px
-	padding-right 66px
-	padding-bottom 45px
-	padding-left 66px
-	width 472px
-	min-height 528px
-	background-color #e2ffe2
-	color #333333
-	box-shadow -4px 2px 4px 2px rgba(153, 153, 153, 0.13)
-	&__title
-		margin-bottom 40px
-		font-family $nimb
-		font-size 23px
-		font-weight 500
-		line-height 28px
-		text-align center
-		span
-			border-bottom 1px solid #333333
-			padding-bottom 2px
-	// &__w
-	&__field
-		border none
-		margin-bottom 11px
-		padding-left 17px
-		padding-right 17px
-		width 100%
-		height 47px
-		background-color #ffffff
-		color #999999
-		font-family $nimb
-		font-size 17px
-		letter-spacing tracking(20)
-		box-shadow -2px 2px 4px 1px rgba(153, 153, 153, 0.13)
-		+placeholder()
-			color #999999
-	// &__field-text
-	&__field-message
-		padding-top 17px
-		min-height 157px
-	&__field-submit
-		margin-top 28px
-		margin-bottom 0
-		height 61px
-		background #d7d7d7
-		color #333333
-		font-size 22px
-		box-shadow -2px 2px 4px 1px rgba(153, 153, 153, 0.33)
-		tr(all .3s ease)
-		&:hover
-			background darken(#d7d7d7, 10)
-
-
-.social_big
-	.social__item_vk
-		.social__icon
-			width 46px
-			height 26px
-			fill #333
-	.social__item_fb
-		.social__icon
-			width 24px
-			height 40px
-			fill #333
-	.social__item_inst
-		.social__icon
-			width 36px
-			height 36px
-			fill #333
-	.social__item_youtube
-		.social__icon
-			width 34px
-			height 40px
-			fill #333

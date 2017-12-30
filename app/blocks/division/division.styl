@@ -33,7 +33,6 @@
 		height 18px
 		border 3px solid #ccffcc
 		background-color #b7b7b7
-
 	&__button
 		position relative
 		width 50%
@@ -41,6 +40,11 @@
 		display inline-block
 		vertical-align top
 		tr(all .3s ease)
+		+r(1140px)
+			width 100%
+			display block
+		+r(768px)
+			min-height 278px
 	&__button_first
 		background url(../images/content/legal-button.jpg) 100% 0  no-repeat
 		background-size cover
@@ -52,24 +56,32 @@
 			right 92px
 			background url(../images/general/legal-button.png) 0 0 no-repeat
 			background-size cover
+			+r(768px)
+				right 10px
 			&:after
 				right 67px
 				retinaSprite($legal_icon_group)
+				+r(425px)
+					right 42px
 	&__button_second
 		background url(../images/content/individ-button.jpg) 0 0 no-repeat
 		background-size cover
 		&:hover
 			background url(../images/content/individ-button-hover.jpg) 0 0 no-repeat
 			background-size cover
-			
+
 		.division__button-w
 			left 92px
 			background url(../images/general/indiv-button.png) 0 0 no-repeat
 			background-size cover
 			color #000
+			+r(768px)
+				left 10px
 			&:after
 				right 73px
 				retinaSprite($individ_icon_group)
+				+r(425px)
+					right 48px
 	&__button-w
 		position absolute
 		top 50%
@@ -85,7 +97,19 @@
 		font-size 40px
 		line-height 52px
 		text-align center
+		+r(486px)
+			width 388px
+			height 78px
+			font-size 33px
+			line-height 43px
+		+r(425px)
+			width 320px
+			height 64px
+			font-size 27px
+			line-height 36px
 		&:after
 			position absolute
 			bottom -25px
 			content ''
+			+r(425px)
+				bottom -32px

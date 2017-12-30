@@ -8,6 +8,11 @@
 		display flex
 		justify-content space-between
 		align-items center
+		+r(768px)
+			padding-top 23px
+			padding-bottom 23px
+			display block
+			flex-wrap wrap
 	&__address
 		position relative
 		padding-left 15px
@@ -55,5 +60,6 @@
 		color #666666
 
 	&__to-top
+		display block
 		retinaSprite($to_top_group)
 		hide-text()

@@ -1,0 +1,76 @@
+.services
+	padding-top 50px
+	padding-bottom 50px
+	overflow hidden
+	&__title
+		margin-bottom 44px
+		@extends .title
+	&__list
+		display flex
+		justify-content center
+		align-items flex-start
+	&__item
+		margin-right 50px
+		width 252px
+		&:last-child
+			margin-right 0
+	&__item_1
+		.services__service
+			&:after
+				retinaSprite($services_1_group)
+	&__item-2
+		.services__service
+			&:after
+				retinaSprite($services_2_group)
+	&__item-3
+		.services__service
+			&:after
+				retinaSprite($services_3_group)
+	&__item-4
+		.services__service
+			&:after
+				retinaSprite($services_4_group)
+	&__item-5
+		.services__service
+			&:after
+				retinaSprite($services_5_group)
+	&__item-6
+		.services__service
+			&:after
+				retinaSprite($services_6_group)
+	&__service
+		position relative
+		margin-bottom 20px
+		min-height 62px
+		font-family $aTit
+		font-size 19px
+		line-height 30px
+		letter-spacing tracking(20)
+		&:after
+			position absolute
+			top 0
+			left -50px
+			content ''
+	// &__service-list
+
+	&__service-item
+		margin-bottom 20px
+	&__service-link
+		display block
+		text-decoration none
+		color #666666
+		font-size 17px
+		font-family $nimb
+		font-weight bold
+		letter-spacing tracking(20)
+	&__service-text
+		position relative
+		padding-left 10px
+		&:after
+			position absolute
+			top 2px
+			left 0
+			bottom 0
+			width 1px
+			background #999999
+			content ''

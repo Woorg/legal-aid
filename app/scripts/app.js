@@ -6,20 +6,16 @@ import $ from 'jquery';
 
 	$(function() {
 
-		// $('.division__button_first').hover(function() {
-		// 	$('.division__switch-item').removeClass('division__switch-item_active');
-		// 	$(this)
-		// 		.parent()
-		// 		.find('.division__switch-item:first-child')
-		// 		.toggleClass('division__switch-item_active')
-		// });
-		// $('.division__button_second').hover(function() {
-		// 	$(this)
-		// 		.parent()
-		// 		.find('.division__switch-item:last-child')
-		// 		.toggleClass('division__switch-item_active')
-		// });
+		// scrollAnimate
 
+		let $toTop = $('.footer__to-top');
+
+		$toTop.on('click', function () {
+			let sectionId = $(this).attr('href');
+			$('html, body').animate({
+				scrollTop: $(sectionId).offset().top
+			}, 500);
+		});
 
 
 

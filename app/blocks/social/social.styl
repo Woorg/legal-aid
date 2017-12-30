@@ -1,0 +1,57 @@
+.social
+	font-size 0
+	&__item
+		margin-right 10px
+		display inline-block
+		vertical-align middle
+		&:last-child
+			margin-right 0
+		+r(1024px)
+			margin-right 5px
+
+	&__item_vk
+		.social__icon
+			width 44px
+			height 38px
+	&__item_fb
+		.social__icon
+			width 40px
+			height 40px
+	&__item_inst
+		.social__icon
+			width 35px
+			height 35px
+	&__item_youtube
+		.social__icon
+			width 35px
+			height 38px
+	&__link
+		display block
+		&:hover
+			.social__icon
+				fill darken(#666666, 10)
+	&__icon
+		fill #666666
+		tr(all .3s ease)
+
+.social_big
+	.social__item_vk
+		.social__icon
+			// width 46px
+			// height 26px
+			fill #333
+	.social__item_fb
+		.social__icon
+			// width 24px
+			// height 40px
+			fill #333
+	.social__item_inst
+		.social__icon
+			// width 36px
+			// height 36px
+			fill #333
+	.social__item_youtube
+		.social__icon
+			// width 34px
+			// height 40px
+			fill #333
