@@ -27,7 +27,8 @@
 		+r(768px)
 			width 100%
 		.how__icon
-			retinaSprite($how_1_icon_group)
+			max-width 176px
+			// height 184px
 	&__item_2
 		width 260px
 		+r(1024px)
@@ -35,7 +36,8 @@
 		+r(768px)
 			width 100%
 		.how__icon
-			retinaSprite($how_2_icon_group)
+			max-width 188px
+			height 184px
 	&__item_3
 		width 282px
 		+r(1024px)
@@ -43,11 +45,14 @@
 		+r(768px)
 			width 100%
 		.how__icon
-			retinaSprite($how_3_icon_group)
+			max-width 185px
+			height 170px
 	&__icon
 		margin auto
 		margin-bottom 36px
 		display block
+		img
+			@extends .image
 	&__arrow
 		position absolute
 		right -102px
@@ -70,6 +75,9 @@
 		text-align center
 		+r(768px)
 			font-size 25px
+		+r(425px)
+			font-size 20px
+			line-height 21px
 
 .how_style-second
 	background rgba(102,153,102,.24) url(../images/general/pattern.png) 0 0 repeat

@@ -8,6 +8,9 @@
 		vertical-align top
 		&:last-child
 			margin-right 0
+			&:after
+				display none
+
 		&:after
 			position absolute
 			top 50%
@@ -25,3 +28,6 @@
 		letter-spacing tracking(20, 20)
 		&:hover
 			text-decoration underline
+		+r(768px)
+			font-size 17px
+			line-height 31px

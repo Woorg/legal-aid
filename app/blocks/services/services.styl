@@ -9,12 +9,31 @@
 		display flex
 		justify-content center
 		align-items flex-start
+		+r(1440px)
+			flex-wrap wrap
 	&__item
-		margin-right 50px
-		width 252px
+		margin-right 25px
+		padding-left 50px
+		// width 192px
+		width 16.666667%
+		+r(1440px)
+			margin-right 0
+			margin-left 50px
+			margin-bottom 30px
+			width 25%
+		+r(1024px)
+			margin-left 0
+			padding-left 60px
+			padding-right 50px
+			width 50%
+		+r(768px)
+			padding-right 10px
+		+r(600px)
+			width 100%
+
 		&:last-child
 			margin-right 0
-	&__item_1
+	&__item-1
 		.services__service
 			&:after
 				retinaSprite($services_1_group)
@@ -63,6 +82,8 @@
 		font-family $nimb
 		font-weight bold
 		letter-spacing tracking(20)
+		&:hover
+			text-decoration underline
 	&__service-text
 		position relative
 		padding-left 10px

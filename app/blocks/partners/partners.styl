@@ -2,6 +2,8 @@
 	padding-top 45px
 	padding-bottom 110px
 	overflow hidden
+	+r(768px)
+		padding-bottom 45px
 	&__title
 		margin-bottom 75px
 		@extends .title
@@ -34,3 +36,8 @@
 	&__image
 		img
 			@extends .image
+			+r(1170px)
+				max-width 80%
+			+r(768px)
+				margin auto
+				max-width 50%

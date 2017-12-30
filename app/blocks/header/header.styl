@@ -76,6 +76,8 @@
 
 	&__control
 		padding 10px 16px
+		display inline-block
+		vertical-align top
 		font-family $nimb
 		font-weight bold
 		font-size 15px
@@ -83,7 +85,9 @@
 		border 4px solid #ffffff
 		background #c7dac7
 		color #010100
+		tr(background .3s ease)
 		&:hover
+
 			background darken(#c7dac7, 10)
 
 .header_style-second
@@ -107,7 +111,28 @@
 			padding-bottom 14px
 			display block
 			clr()
+			+r(1024px)
+				padding-top 10px
+			+r(768px)
+				text-align center
 	.header__control
 		margin-top -10px
 		float right
 		text-decoration none
+		+r(1161px)
+			margin-top 0
+		+r(768px)
+			float none
+	.header__social
+		+r(768px)
+			display inline-block
+			vertical-align top
+	.header__button
+		+r(768px)
+			display inline-block
+			vertical-align top
+		+r(364px)
+			margin-bottom 10px
+	.header__phone
+		+r(768px)
+			margin-top 10px

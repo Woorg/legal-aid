@@ -3,9 +3,13 @@
 	background url(../images/general/pattern.png) 0 0 repeat
 	+r(1024px)
 		padding-bottom 62px
+	+r(768px)
+		padding-bottom 31px
 	&__top
 		padding-top 45px
 		min-height 191px
+		+r(768px)
+			padding-top 22px
 	&__in
 		@extends .in
 		clr()
@@ -23,11 +27,20 @@
 		line-height 32px
 		text-align center
 		letter-spacing tracking(60)
+		+r(728px)
+			font-size 24px
+			line-height 27px
+		+r(425px)
+			font-size 20px
+			line-height 22px
 	&__w
 		padding-top 30px
 		background #fff
 		+r(1024px)
 			padding-bottom 30px
+		+r(768px)
+			padding-top 10px
+			padding-bottom 10px
 	&__left
 		padding-left 45px
 		width 550px
@@ -65,7 +78,9 @@
 	background none
 	.consultation__top
 		padding-bottom 38px
-		min-height auto  
+		min-height auto
+		+r(768px)
+			padding-bottom 10px
 	.consultation__w
 		background url(../images/content/consult-legal.jpg) 100% 0 no-repeat
 	.consultation__left

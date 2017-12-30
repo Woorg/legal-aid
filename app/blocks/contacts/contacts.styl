@@ -3,19 +3,29 @@
 	padding-left 250px
 	min-height 976px
 	background #ccffcc url(../images/general/logo-second.png) 50% no-repeat
+	background-size cover
 	+r(1170px)
 		padding-left 100px
 	+r(1024px)
 		padding-top 95px
 		min-height 698px
 	+r(768px)
+		padding-top 40px
+		padding-bottom 40px
+
 		padding-left 50px
+		min-height auto
 	&__title
 		margin-bottom 36px
 		font-family $aTit
 		font-size 36px
 		line-height 52px
 		letter-spacing tracking(20)
+		+r(768px)
+			margin-bottom 30px
+			font-size 30px
+		+r(425px)
+			font-size 25px
 	&__hours,
 	&__phones,
 	&__email
@@ -27,6 +37,9 @@
 		font-weight 500
 		line-height 31px
 		letter-spacing tracking(60)
+		+r(768px)
+			font-size 20px
+			line-height 25px
 
 	// &__hours-title
 	// &__hours-item
@@ -76,3 +89,5 @@
 	&__social-title
 		margin-right 24px
 		font-size 24px
+		+r(768px)
+			font-size 20px

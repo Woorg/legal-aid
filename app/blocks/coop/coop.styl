@@ -23,11 +23,21 @@
 		padding-right 33px
 		+r(1170px)
 			margin-bottom 20px
+			padding-left 150px
+			padding-right 150px
 			width 50%
 			text-align center
 		+r(768px)
 			width 100%
+		+r(425px)
+			padding-left 0
+			padding-right 0
 		&:last-child
 			margin-right 0
-    //
-	// &__image
+	&__image
+		@extends .image
+		+r(1170px)
+			max-width 80%
+		+r(768px)
+			margin auto
+			max-width 50%

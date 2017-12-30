@@ -4,6 +4,8 @@
 	background-size cover
 	overflow hidden
 	&__in
+		position relative
+		z-index 1
 		@extends .in
 		min-height 448px
 		clr()
@@ -15,7 +17,7 @@
 		float left
 		color #000000
 		+r(1140px)
-			width ratio-percentage(710, 1170)
+			width ratio-percentage(710, 1140)
 		+r(1060px)
 			margin auto
 			padding-top 20px
@@ -27,7 +29,7 @@
 		width 400px
 		float right
 		+r(1140px)
-			width ratio-percentage(400, 1170)
+			width ratio-percentage(400, 1140)
 		+r(1060px)
 			width auto
 			float none
@@ -95,14 +97,39 @@
 			display none
 
 .hero_style-second
-	background url('../images/content/hero-legal.jpg') 0 0 no-repeat
+	position relative
+	background url('../images/content/hero-legal.jpg') 50% 0 no-repeat
+	&:after
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		left 0
+		background rgba(0, 0 ,0 , .3)
+		content ''
 	.hero__in
 		min-height 323px
+		+r(768px)
+			display table
 	.hero__left
 		padding-top 118px
+		+r(1024px)
+			margin auto
+			width auto
+		+r(768px)
+			padding-top 96px
+			display table-cell
+		+r(320px)
+			padding-top 56px
 	.hero__title
 		color #ffffff
-		letter-spacing tracking(80z)
+		letter-spacing tracking(80)
+		+r(320px)
+			font-size 20px
+			line-height 46px
+	.hero__right
+		+r(1060px)
+			display none
 	.hero__logo
 		margin-top 55px
 		margin-left 0

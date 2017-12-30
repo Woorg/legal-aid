@@ -1,5 +1,17 @@
 .map
 	width 100%
 	min-height 976px
+	overflow hidden
+	padding-bottom 56.25%
+	position relative
+	height 0
 	+r(1024px)
 		min-height 698px
+	+r(768px)
+		min-height 349px
+	&__object
+		position absolute
+		left 0
+		top 0
+		height 100%
+		width 100%

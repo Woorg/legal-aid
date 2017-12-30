@@ -6,13 +6,23 @@
 		padding-bottom 46px
 		min-height 135px
 		display flex
-		justify-content space-between
+		justify-content space-around
 		align-items center
 		+r(768px)
 			padding-top 23px
 			padding-bottom 23px
-			display block
+			// display block
 			flex-wrap wrap
+			// align-items flex-start
+		+r(425px)
+			align-items flex-start
+
+	&__address,
+	&__phone,
+	&__copyright,
+	&__to-top
+		+r(425px)
+			width 50%
 	&__address
 		position relative
 		padding-left 15px
@@ -20,6 +30,12 @@
 		font-weight 500
 		line-height 31px
 		font-size 18px
+		+r(768px)
+			font-size 15px
+			line-height 25px
+		+r(425px)
+			font-size 12px
+			line-height 20px
 		&:after
 			position absolute
 			top 6px
@@ -39,13 +55,18 @@
 		font-weight 500
 		line-height 31px
 		font-size 18px
+		+r(768px)
+			font-size 15px
+			line-height 25px
+		+r(425px)
+			font-size 12px
+			line-height 20px
 		&:after
 			position absolute
-			top 6px
+			top 2px
 			left 0
 			bottom 0
 			border 3px solid #ccffcc
-			height 43px
 			content ''
 
 	// &__phone-title
@@ -54,12 +75,22 @@
 		text-decoration none
 
 	&__copyright
-		font-size 11px
+		font-size 12px
 		font-family $nimb
 		line-height 15px
 		color #666666
+		+r(425px)
+			padding-top 10px
 
 	&__to-top
 		display block
-		retinaSprite($to_top_group)
-		hide-text()
+		width 80px
+		height 76px
+		background url(../images/general/to-top.png) 0 0 / cover no-repeat
+		text-indent -9999px
+		+r(768px)
+			width 40px
+			height 38px
+
+.footer_style-second
+	background #aac1aa
