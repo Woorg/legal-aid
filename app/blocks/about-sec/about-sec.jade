@@ -1,0 +1,25 @@
+include ../icon/icon
+
+mixin about-sec()
+	.about-sec
+		.about-sec__in
+			h2.about-sec__title
+				span о нашей компании в цифрах
+			ul.about-sec__list
+				li.about-sec__item
+					.about-sec__num 12
+					.about-sec__item-title Лет судебной <br/>практики
+					+icon('angle-right', true).about-sec__arrow
+				li.about-sec__item
+					.about-sec__num 14
+					.about-sec__item-title Проведённых судов в<br/> субъектах РФ
+					+icon('angle-right', true).about-sec__arrow
+				li.about-sec__item
+					.about-sec__num 1118
+					.about-sec__item-title Успешно выигранных<br/> судебных дел
+					+icon('angle-right', true).about-sec__arrow
+				li.about-sec__item
+					.about-sec__num 3480
+					.about-sec__item-title Постоянных клиентов
+					//- +icon('angle-right', true).about-sec__arrow
+					

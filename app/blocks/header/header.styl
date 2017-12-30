@@ -1,0 +1,116 @@
+.header
+	&__in
+		@extends .in
+		padding-top 20px
+		padding-bottom 20px
+		font-size 0
+		// display flex
+		// justify-content space-between
+		// align-items center
+	&__nav,
+	&__button,
+	&__social,
+	&__phone
+		display inline-block
+		vertical-align middle
+
+	&__nav
+		margin-right 67px
+	&__button
+		margin-right 27px
+		padding 10px 28px 10px
+		width 146px
+		background-color #ffffff
+		color #333333
+		font-family $nimb
+		font-size 12px
+		text-decoration none
+		text-transform uppercase
+		text-align center
+		border 3px solid #ccffcc
+		border-radius 5px
+		box-shadow -2px 2px 3px rgba(0, 0, 0, .21)
+		tr( all .3s ease)
+		&:hover
+			box-shadow none
+	&__button-text
+		font-weight 500
+		line-height 14px
+		letter-spacing tracking(20)
+
+	// &__social
+	// 	margin-right 61px
+
+	&__phone
+		margin-top 15px
+		float right
+
+.nav
+	&__list
+		font-size 0
+	&__item
+		margin-right 20px
+		display inline-block
+		vertical-align top
+		&:last-child
+			margin-right 0
+	&__link
+		font-family $aTit
+		// font-family $aTitg
+		font-size 16px
+		line-height 24px
+		letter-spacing tracking(200)
+		text-transform uppercase
+		text-decoration none
+		color #333333
+		tr(all .3s ease)
+		&:hover
+			color darken(#333333, 50)
+.social
+	font-size 0
+	&__item
+		margin-right 10px
+		display inline-block
+		vertical-align middle
+		&:last-child
+			margin-right 0
+	&__item_vk
+		.social__icon
+			width 42px
+			height 22px
+	&__item_fb
+		.social__icon
+			width 20px
+			height 36px
+	&__item_inst
+		.social__icon
+			width 30px
+			height 30px
+	&__item_youtube
+		.social__icon
+			width 32px
+			height 38px
+	&__link
+		display block
+		&:hover
+			.social__icon
+				fill darken(#666666, 10)
+	&__icon
+		fill #666666
+		tr(all .3s ease)
+
+.phone
+	font-family $nimb
+	font-size 20px
+	line-height 24px
+	letter-spacing 0.4px
+	text-decoration none
+	color #333333
+	&__icon
+		display inline-block
+		vertical-align middle
+		width 16px
+		height 16px
+		fill #333333
+	&__val
+		padding-left 8px

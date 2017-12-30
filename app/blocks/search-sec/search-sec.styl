@@ -1,0 +1,40 @@
+.search-sec
+	background url(../images/general/pattern.png) 0 0 repeat
+	&__in
+		@extends .in
+		padding-top 20px
+		padding-bottom 20px
+	// &__form
+
+
+.search-form
+	&__form
+		position relative
+	&__input
+		padding-left 70px
+		padding-right 70px
+		width 100%
+		height 57px
+		background-color #d7e4d7
+		font-size 30px
+		font-family $nimb
+		font-weight 500
+		color #666666
+		border 4px solid #ffffff
+		+placeholder()
+			color #666666
+
+	&__submit
+		position absolute
+		top 18px
+		right 70px
+		border none
+		background none
+		&:hover
+			.search-form__search-icon
+				fill lighten(#666666, 20)
+
+	&__search-icon
+		width 30px
+		height 22px
+		fill #666666

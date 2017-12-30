@@ -1,0 +1,67 @@
+.hero
+	display block
+	background url('../images/content/hero-img.jpg') 0 0 no-repeat
+	background-size cover
+	&__in
+		@extends .in
+		min-height 448px
+		clr()
+	&__left
+		padding-top 80px
+		width 710px
+		float left
+		color #000000
+	&__right
+		width 400px
+		float right
+	&__title
+		margin-bottom 27px
+		font-family $aTit
+		font-size 45px
+		line-height 59px
+		letter-spacing tracking(20,45)
+		text-transform uppercase
+	&__text
+		margin-bottom 30px
+		font-family $aTit
+		font-size 24px
+		line-height 52px
+		letter-spacing tracking(60,32)
+		text-transform uppercase
+	&__button
+		padding-top 18px
+		padding-right 65px
+		padding-bottom 18px
+		padding-left 65px
+		width 298px
+		display block
+		color #333333
+		font-size 24px
+		font-family $ad
+		font-weight 600
+		letter-spacing tracking(20,24)
+		text-decoration none
+		background-color #ccffcc
+		border 1px solid #ffffff
+		box-shadow -3px 4px 6px 1px rgba(51, 51, 51, 0.32)
+		tr(all .3s ease)
+		&:hover
+			box-shadow none
+	&__logo
+		margin-top 80px
+		margin-left 36px
+
+.logo
+	display block
+	retinaSprite($logo_group)
+	color #333333
+	font-family Georgia
+	font-size 19px
+	font-weight 700
+	font-style italic
+	text-decoration none
+	letter-spacing tracking(20)
+	&__text
+		padding-top 160px
+		padding-left 115px
+		white-space nowrap

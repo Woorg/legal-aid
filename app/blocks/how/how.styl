@@ -1,0 +1,51 @@
+.how
+	display block
+	overflow hidden
+	&__in
+		@extends .in
+		padding-top 40px
+		padding-bottom 40px
+	&__title
+		@extends .title
+		margin-bottom 37px
+	&__list
+		display flex
+		justify-content space-between
+	&__item
+		position relative
+		display inline-block
+		vertical-align top
+		text-align center
+	&__item_1
+		width 300px
+		.how__icon
+			retinaSprite($how_1_icon_group)
+	&__item_2
+		width 260px
+		.how__icon
+			retinaSprite($how_2_icon_group)
+	&__item_3
+		width 282px
+		.how__icon
+			retinaSprite($how_3_icon_group)
+	&__icon
+		margin auto
+		margin-bottom 36px
+		display block
+	&__arrow
+		position absolute
+		right -60px
+		bottom 120px
+		width 30px
+		height 30px
+		fill #666666
+		opacity .65
+
+	&__item-title
+		color #666666
+		font-family $nimb
+		font-weight 500
+		font-size 30px
+		line-height 26px
+		letter-spacing tracking(60)
+		text-align center

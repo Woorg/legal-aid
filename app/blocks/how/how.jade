@@ -1,0 +1,20 @@
+include ../icon/icon
+
+mixin how()
+	.how
+		.how__in
+			h2.how__title.title 
+				span КАК МЫ РАБОТАЕМ
+			ul.how__list
+				li.how__item.how__item_1
+					.how__icon
+					.how__item-title 1. Задайте вопрос
+					+icon('angle-right', true).how__arrow
+				li.how__item.how__item_2
+					.how__icon
+					.how__item-title 2. Получите юридическую консультацию
+					+icon('angle-right', true).how__arrow
+				li.how__item.how__item_3
+					.how__icon
+					.how__item-title 3. Ваша проблема решена!
+		

@@ -1,0 +1,88 @@
+.division
+	position relative
+	display block
+	font-size 0
+	overflow hidden
+	&__in
+		position absolute
+		top 0
+		left 0
+		right 0
+		@extends .in
+		padding-top 5px
+	&__switch
+		margin auto
+		padding 3px 5px
+		width 82px
+		height 30px
+		border 3px solid #636363
+		background-color #ffffff
+		opacity 0.98
+		border-radius 5px
+		justify()
+	&__switch-item
+		width 18px
+		height 18px
+		display inline-block
+		vertical-align middle
+		border 3px solid transparent
+		background-color transparent
+		border-radius 50%
+	&__switch-item_active
+		width 18px
+		height 18px
+		border 3px solid #ccffcc
+		background-color #b7b7b7
+
+
+	&__button
+		position relative
+		width 50%
+		height 278px
+		display inline-block
+		vertical-align top
+		tr(all .3s ease)
+	&__button_first
+		background url(../images/content/legal-button.jpg) 0 0 no-repeat
+		background-size cover
+		&:hover
+			background url(../images/content/legal-button-hover.jpg) 0 0 no-repeat
+		.division__button-w
+			right 92px
+			background url(../images/general/legal-button.png) 0 0 no-repeat
+			background-size cover
+			&:after
+				right 67px
+				retinaSprite($legal_icon_group)
+	&__button_second
+		background url(../images/content/individ-button.jpg) 0 0 no-repeat
+		background-size cover
+		&:hover
+			background url(../images/content/individ-button-hover.jpg) 0 0 no-repeat
+		.division__button-w
+			left 92px
+			background url(../images/general/indiv-button.png) 0 0 no-repeat
+			background-size cover
+			color #000
+			&:after
+				right 73px
+				retinaSprite($individ_icon_group)
+	&__button-w
+		position absolute
+		top 50%
+		margin-top -46px
+		padding-top 15px
+		padding-bottom 10px
+		width 464px
+		height 93px
+		display block
+		color #ffffff
+		font-family $nimb
+		font-weight 500
+		font-size 40px
+		line-height 52px
+		text-align center
+		&:after
+			position absolute
+			bottom -25px
+			content ''

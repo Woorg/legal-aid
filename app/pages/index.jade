@@ -1,10 +1,37 @@
 extends /blocks/layout-default/layout-default
 
-include /blocks/hbk-player/hbk-player
+include /blocks/header/header
+
+include /blocks/hero/hero
+include /blocks/how/how
+include /blocks/division/division
+include /blocks/search-sec/search-sec
+include /blocks/about-sec/about-sec
+include /blocks/consultation/consultation
+include /blocks/partners/partners
+include /blocks/advantages/advantages
+include /blocks/coop/coop
+include /blocks/map/map
+include /blocks/contacts/contacts
+
+include /blocks/footer/footer
+
 
 block head
-	- var pageTitle = 'Player widget';
+	- var pageTitle = 'Главная';
 
 block content
-	.page__in
-		+hbk-player()
+	+header()
+	+hero()
+	+how()
+	+division()
+	+search-sec()
+	+about-sec()
+	+consultation()
+	+partners()
+	+advantages()
+	+coop()
+	.page__bottom
+		+map()
+		+contacts()
+	+footer()

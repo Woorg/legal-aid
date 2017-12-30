@@ -1,0 +1,37 @@
+include ../icon/icon
+
+mixin header()
+	.header
+		.header__in
+			nav.nav.header__nav
+				ul.nav__list
+					li.nav__item
+						a.nav__link(href="#") Главная
+					li.nav__item
+						a.nav__link(href="#") О Компании
+					li.nav__item
+						a.nav__link(href="#") Услуги
+					li.nav__item
+						a.nav__link(href="#") Контакты
+						
+			a.header__button(href="#button") 
+				span.header__button-text образцы документов
+				
+			ul.social.header__social
+				li.social__item.social__item_vk
+					a.social__link(href="") Vk
+						+icon('vk', true).social__icon
+				li.social__item.social__item_fb
+					a.social__link(href="") Facebook
+						+icon('fb', true).social__icon
+				li.social__item.social__item_inst
+					a.social__link(href="") Instagram
+						+icon('inst', true).social__icon
+				li.social__item.social__item_youtube
+					a.social__link(href="") Youtube
+						+icon('youtube', true).social__icon
+					
+			a.phone.header__phone(href="tel:+78007002525")
+				+icon('phone', true).phone__icon 
+				span.phone__val + 7 800 700 25 25
+			
