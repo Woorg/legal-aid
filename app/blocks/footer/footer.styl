@@ -1,2 +1,59 @@
 .footer
-	display block
+	background-color #959595
+	&__in
+		@extends .in
+		padding-top 46px
+		padding-bottom 46px
+		min-height 135px
+		display flex
+		justify-content space-between
+		align-items center
+	&__address
+		position relative
+		padding-left 15px
+		font-family $nimb
+		font-weight 500
+		line-height 31px
+		font-size 18px
+		&:after
+			position absolute
+			top 6px
+			left 0
+			bottom 0
+			border 3px solid #ccffcc
+			height 43px
+			content ''
+	// &__address-title
+
+	// &__address-val
+
+	&__phone
+		position relative
+		padding-left 15px
+		font-family $nimb
+		font-weight 500
+		line-height 31px
+		font-size 18px
+		&:after
+			position absolute
+			top 6px
+			left 0
+			bottom 0
+			border 3px solid #ccffcc
+			height 43px
+			content ''
+
+	// &__phone-title
+	&__phone-val
+		color #333
+		text-decoration none
+
+	&__copyright
+		font-size 11px
+		font-family $nimb
+		line-height 15px
+		color #666666
+
+	&__to-top
+		retinaSprite($to_top_group)
+		hide-text()

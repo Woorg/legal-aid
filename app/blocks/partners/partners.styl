@@ -1,2 +1,27 @@
 .partners
-	display block
+	padding-top 45px
+	padding-bottom 110px
+	overflow hidden
+	&__title
+		margin-bottom 75px
+		@extends .title
+		span
+			&:before,
+			&:after
+				border-top 3px solid #d0c4b7
+	&__list
+		display flex
+		min-width 1920px
+		justify-content space-between
+		align-items center
+	&__item
+		width 25%
+		display inline-block
+		vertical-align middle
+		text-align center
+	&__link
+		display flex
+		justify-content center
+	&__image
+		img
+			@extends .image

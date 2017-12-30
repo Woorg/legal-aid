@@ -1,23 +1,39 @@
+include ../icon/icon
+
 mixin contacts()
 	.contacts
 		.contacts__title контакты
 		.contacts__hours
 			.contacts__hours-title Режим работы
 			.contacts__hours-item Пн-Пт  С 8:00 до 20:00
+			.contacts__hours-item Сб-Вс  С 8:00 до 19:00
+			
+			+icon('clock', true).contacts__hours-icon
 		.contacts__phones
 			.contacts__phones-title Телефон
-			a.contacts__phones-item(href="tel:+7800700 2525") +7 800 700 25 25
+			a.contacts__phones-item(href="tel:+78007002525") +7 800 700 25 25
+			a.contacts__phones-item(href="tel:+78007002525") +7 800 700 25 25
+			a.contacts__phones-item(href="tel:+78007002525") +7 800 700 25 25
+			
+			+icon('phone', true).contacts__phones-icon
+			
 		.contacts__email
 			.contacts__email-title Почта
 			a.contacts__email-link(href="mailto:почта@gmail.com") почта@gmail.com
+			+icon('mail', true).contacts__email-icon
+			
 		.contacts__social
 			.contacts__social-title Социальные сети
-			ul.social.contacts__social-list
-				li.social__item.social__item-vk
+			ul.social.social_big.contacts__social-list
+				li.social__item.social__item_vk
 					a.social__link(href="") Vk
-				li.social__item.social__item-fb
+						+icon('vk', true).social__icon
+				li.social__item.social__item_fb
 					a.social__link(href="") Facebook
-				li.social__item.social__item-inst
+						+icon('fb', true).social__icon
+				li.social__item.social__item_inst
 					a.social__link(href="") Instagram
-				li.social__item.social__item-youtube
-					a.social__link(href="") Youtube 
+						+icon('inst', true).social__icon
+				li.social__item.social__item_youtube
+					a.social__link(href="") Youtube
+						+icon('youtube', true).social__icon

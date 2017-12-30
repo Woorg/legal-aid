@@ -1,2 +1,22 @@
 .coop
-	display block
+	padding-top 70px
+	padding-bottom 70px
+	overflow hidden
+	&__title
+		margin-bottom 58px
+		@extends .title
+		span
+			&:before,
+			&:after
+				border-top 3px solid #d0c4b7
+	&__list
+		display flex
+		justify-content space-between
+		align-items center
+	&__item
+		padding-left 33px
+		padding-right 33px
+		&:last-child
+			margin-right 0
+    //
+	// &__image

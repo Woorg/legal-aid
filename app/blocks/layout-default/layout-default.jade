@@ -8,4 +8,34 @@ html(lang='ru')
 	include ../head/head
 	+page
 		block content
-		+scripts(['app.min.js'])
+		+scripts(['//api-maps.yandex.ru/2.1/?lang=ru_RU', 'app.min.js'])
+
+		script.
+			ymaps.ready(init);
+			var myMap;
+			var myPlacemark;
+		
+			function init()
+			{
+		
+				myMap = new ymaps.Map("map",
+				{
+					center: [55.755814, 37.617635],
+					zoom: 17,
+					controls: ["zoomControl"]
+				});
+		
+				myPlacemark = new ymaps.Placemark([55.755814, 37.617635],
+				{
+					iconCaption: 'г.Москва ул.Красных партизан 62'
+		
+				},
+				{
+					preset: 'islands#blueCircleDotIconWithCaption'
+		
+				});
+		
+				myMap.geoObjects.add(myPlacemark);
+				myMap.behaviors.disable('scrollZoom');
+		
+			}

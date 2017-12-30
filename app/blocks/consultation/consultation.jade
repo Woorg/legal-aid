@@ -5,16 +5,18 @@ mixin consultation()
 				h2.consultation__title Получите бесплатную консультацию
 				p.consultation__text У вас есть проблема? Позвоните нам прямо сейчас
 		.consultation__w
-			.consultation__left
-				img.consultation__img(src="assets/images/content/consultation-img.jpg", alt="")
-			.consultation__right
-				.consultation__form.form
-					.form__title Получите бесплатную консультацию
-					form.form__w(action="", method="post")
-						.form__row
-							input.form__field.form__field-text(type="text", value="Ваше Имя", placeholder="text")
-							input.form__field.form__field-text(type="text", value="Ваше Имя", placeholder="text")
-							input.form__field.form__field-text(type="text", value="Ваше Имя", placeholder="text")
+			.consultation__in
+				.consultation__left
+					.consultation__image
+						img.consultation__img(src="assets/images/content/consultation-img.jpg", alt="")
+				.consultation__right
+					.consultation__form.form
+						.form__title 
+							span Получите бесплатную консультацию
+						form.form__w(action="", method="post")
+							input.form__field.form__field-text(type="text", value="", placeholder="Ваше Имя")
+							input.form__field.form__field-text(type="text", value="", placeholder="Ваш Телефон")
 							textarea.form__field.form__field-message(name="", placeholder="Описание")
 							input.form__field.form__field-submit(type="submit", value="получить консультацию")
 		
+			

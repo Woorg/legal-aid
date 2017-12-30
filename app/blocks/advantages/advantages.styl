@@ -1,2 +1,83 @@
 .advantages
-	display block
+	background url(../images/content/adv-bg.jpg) 0 0 no-repeat
+	background-size cover
+	overflow hidden
+	&__in
+		@extends .in
+		padding-top 45px
+		padding-right 0
+		padding-bottom 50px
+		padding-left 0
+	&__title
+		margin-bottom 50px
+		@extends .title
+		color #fff
+		span
+			&:before,
+			&:after
+				border-top 3px solid #87715b
+
+	&__list
+		margin-left -30px
+		margin-right -30px
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		align-items flex-top
+	&__item
+		margin-bottom 20px
+		// padding-left 10px
+		// padding-right 10px
+		width 20%
+		text-align center
+
+	&__item_1
+		.advantages__icon
+			sprite($advantages_1)
+	&__item_2
+		.advantages__icon
+			sprite($advantages_2)
+	&__item_3
+		.advantages__icon
+			sprite($advantages_3)
+	&__item_4
+		.advantages__icon
+			sprite($advantages_4)
+	&__item_5
+		.advantages__icon
+			sprite($advantages_5)
+	&__item_6
+		.advantages__icon
+			sprite($advantages_6)
+	&__item_7
+		.advantages__icon
+			sprite($advantages_7)
+	&__item_8
+		.advantages__icon
+			sprite($advantages_8)
+	&__item_9
+		.advantages__icon
+			sprite($advantages_9)
+	&__item_10
+		.advantages__icon
+			sprite($advantages_10)
+
+	&__icon
+		margin auto
+		margin-bottom 20px
+
+	&__item-title
+		margin-bottom 6px
+		color #cc9966
+		font-family $bA
+		font-size 24px
+		line-height 25px
+		letter-spacing tracking(20)
+		text-transform uppercase
+
+	&__item-text
+		font-family $bA
+		font-size 19px
+		line-height 22px
+		color #fff
+		letter-spacing tracking(20)

@@ -1,34 +1,41 @@
 .consultation
+	padding-bottom 124px
+	background url(../images/general/pattern.png) 0 0 repeat
 	&__top
-		background url(../images/general/pattern.png) 0 0 repeat
-
+		padding-top 45px
+		min-height 191px
 	&__in
-
+		@extends .in
+		clr()
 	&__title
-
+		margin-bottom 25px
+		@extends .title
+		line-height 37px
 	&__text
-
+		margin auto
+		margin-bottom 15px
+		max-width 430px
+		font-family $nimb
+		font-weight 500
+		font-size 29px
+		line-height 32px
+		text-align center
+		letter-spacing tracking(60)
 	&__w
-
+		padding-top 30px
+		background #fff
 	&__left
-
+		padding-left 45px
+		width 550px
+		float left
+	&__image
+		width 467px
+		height 638px
 	&__img
-
+		@extends .image
 	&__right
-
+		width 560px
+		float right
 	&__form
-
-.form
-	&__title
-
-	&__w
-
-	&__row
-
-	&__field
-
-	&__field-text
-
-	&__field-message
-
-	&__field-submit
+		margin-top 37px
+		margin-left 42px
